@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LanguageBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="index-main">
+    <div class="index-bg"></div>
+    <div id="welcome-message"></div>
+    <div class="index-title-wrapper">
+      <a href="index.html">
+        <h1 class="index-site-title">LanguageBuddy.nl</h1>
+      </a>
+      <h5>Jouw buddy bij het leren van Nederlands</h5>
+      <div class="index-links">
+        <a href="leesteksten.html" class="link leesteksten">
+          <div class="link-nl">
+            Leesteksten
+          </div>
+          <div class="link-en">
+            Reading Texts
+          </div>
+        </a>
+        <a href="over.html" class="link over">
+          <div class="link-nl">
+            Over
+          </div>
+          <div class="link-en">
+            About
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="latest-text"></div>
+  </div>
+  <div id="flag-overlay">
+    <div class="stripe red"></div>
+    <div class="stripe white"></div>
+    <div class="stripe blue"></div>
+  </div>
+  <script>
+
+    // WELKOMST BERICHT
+    const greetingElem = document.getElementById('welcome-message');
+    const hour = new Date().getHours();
+    let greeting = "Welkom!";
+
+    if (hour < 12) greeting = "Goedemorgen! ☀️";
+    else if (hour < 18) greeting = "Goedemiddag! 🌤️";
+    else greeting = "Goedenavond! 🌙";
+
+    greetingElem.textContent = greeting;
+
+    fetch("texts.json")
+      .then(res => res.json())
+      .then(data => {
+        const latestEntry = data.reduce((max, item) =>
+          item.id > max.id ? item : max
+        );
+        //DEBUG
+        console.log(latestEntry)
+        //*****
+        const latestTextElement = document.getElementById("latest-text")
+        latestTextElement.innerHTML = `
+            <h1>Meest recente tekst</h1>
+            <h2>Most recent text</h2>
+            <a href="tekst.html?id=${latestEntry.id}" id="latest-text-wrapper">
+            <h3>${latestEntry.title}</h3>
+            <h4>${latestEntry["title-en"]}</h4>
+            <p class="level">Niveau: ${latestEntry.level}</p>
+            <p class="level-en">Level: ${latestEntry.level}</p>
+            <p class="description">${latestEntry.description}</p>
+            <p class="description-en">${latestEntry["description-en"]}</p>
+            </a>
+          `;
+      });
+
+
+    // EASTER EGG
+    let buffer = '';
+    const target = 'nederland';
+    document.addEventListener('keydown', (e) => {
+      buffer += e.key.toLowerCase();
+      buffer = buffer.slice(-target.length);
+      if (buffer === target) {
+        const el = document.getElementById('flag-overlay');
+        el.classList.remove('show-flag'); // Reset if needed
+        void el.offsetWidth; // Force reflow
+        el.classList.add('show-flag');
+
+        // Remove class after animation ends (so it can trigger again)
+        setTimeout(() => el.classList.remove('show-flag'), 3500);
+      }
+    });
+  </script>
+
+  </script>
+
+</body>
+
+</html>

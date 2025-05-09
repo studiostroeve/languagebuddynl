@@ -1,0 +1,346 @@
+[
+  {
+    "id": 1,
+    "title": "🐈 De Kat in de Boom",
+    "title-en": "The Cat in the Tree",
+    "level": "A2",
+    "description": "Een tekst over een kat die vastzit.",
+    "description-en": "A text about a cat who is stuck.",
+    "content": "Op een dag zat een kat in een boom. </br>De kat zat vast. </br>De kat was verdrietig. </br>Een buurman probeerde de kat te helpen </br>Hij gebruikte een stoel. </br>De buurman kon niet bij de kat komen. </br>De buurman ging naar zijn huis. </br> Hij belde de brandweer. </br>Na 5 minuten kwam een brandweerwagen. </br>De brandweer redde de kat uit de boom. </br>De buurman was erg blij.",
+    "questions": [
+      {
+        "question": "Waar zat de kat?",
+        "options": [
+          "In een huis",
+          "In een boom",
+          "Op een stoel"
+        ],
+        "answer": "In een boom"
+      },
+      {
+        "question": "Wie redde de kat?",
+        "options": [
+          "De brandweer",
+          "De buren",
+          "Niemand"
+        ],
+        "answer": "De brandweer"
+      },
+      {
+        "question": "Hoe voelde de buurman zich?",
+        "options": [
+          "Verdrietig",
+          "Blij",
+          "Boos"
+        ],
+        "answer": "Blij"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "kat",
+        "translation": "cat",
+        "note": ""
+      },
+      {
+        "word": "boom",
+        "translation": "tree",
+        "note": ""
+      },
+      {
+        "word": "op een dag",
+        "translation": "one day",
+        "note": "This is used in a similiar way like: &ldquo;Once upon a time...&rdquo;"
+      },
+      {
+        "word": "buurman",
+        "translation": "neighbour",
+        "note": ""
+      },
+      {
+        "word": "stoel",
+        "translation": "chair",
+        "note": ""
+      },
+      {
+        "word": "verdrietig",
+        "translation": "sad",
+        "note": ""
+      },
+      {
+        "word": "brandweer",
+        "translation": "fire brigade",
+        "note": ""
+      },
+      {
+        "word": "brandweerwagen",
+        "translation": "fire truck",
+        "note": ""
+      },
+      {
+        "word": "blij",
+        "translation": "happy",
+        "note": ""
+      },
+      {
+        "word": "redde",
+        "translation": "rescued",
+        "note": "<p>from verb <i>redden</i> (to rescue)<p>"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "🛍️ Naar de Markt",
+    "title-en": "To the market",
+    "level": "A2",
+    "description": "Een verhaaltje over een bezoek aan de markt.",
+    "description-en": "A small story about a visit to the market.",
+    "content": "Vandaag ging ik naar de markt in Amsterdam. </br>De kraampjes waren vol met verse producten zoals kaas, groenten en vis. </br>Het was erg druk op het plein waar de markt was. </br>Er waren wel meer dan duizend bezoekers op het plein! </br>Na veel zoeken had ik het kraampje gevonden dat ik zocht. </br>Dat kraampje verkocht veel soorten fruit. </br>Ik kocht tien gigantische appels. </br>&ldquo;Deze appels zijn perfect!&rdquo; zei ik tegen mijzelf. </br>Ik ging terug naar mijn huis. </br>Thuis bakte ik een appeltaart in de oven. </br>De appeltaart was super lekker!",
+    "questions": [
+      {
+        "question": "Wat vond de verteller van de appels?",
+        "options": [
+          "Ze waren te klein.",
+          "Ze waren perfect.",
+          "Ze waren niet lekker."
+        ],
+        "answer": "Ze waren perfect."
+      },
+      {
+        "question": "Waar was de markt?",
+        "options": [
+          "Thuis",
+          "In Amsterdam",
+          "In Rotterdam"
+        ],
+        "answer": "In Amsterdam"
+      },
+      {
+        "question": "Hoeveel mensen waren op het plein?",
+        "options": [
+          "Tien",
+          "Honderd",
+          "Duizend of meer"
+        ],
+        "answer": "Duizend of meer"
+      },
+      {
+        "question": "Wat kocht de verteller op de markt?",
+        "options": [
+          "Kaas",
+          "Brood",
+          "Appels"
+        ],
+        "answer": "Appels"
+      },
+      {
+        "question": "Hoe groot waren de appels?",
+        "options": [
+          "Klein",
+          "Normaal",
+          "Groot"
+        ],
+        "answer": "Groot"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "markt",
+        "translation": "market",
+        "note": ""
+      },
+      {
+        "word": "kraampjes",
+        "translation": "stalls",
+        "note": "A small table or stand where someone sells things. They are often seen at markets. They are like tiny shops, but outside and smaller."
+      },
+      {
+        "word": "druk",
+        "translation": "busy",
+        "note": "Busy with people. Crowded."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "🧑 Ik ben Mark",
+    "title-en": "I am Mark",
+    "level": "0",
+    "description": "Een kort verhaal over wie Mark is.",
+    "description-en": "A short story about who Mark is.",
+    "content": "Ik ben Mark. </br>Ik ben 24 jaar oud. </br>Ik leer Nederlands. </br>Ik woon 3 jaar in Nederland. </br>Ik houd van sporten.",
+    "questions": [
+      {
+        "question": "Wat leert Mark?",
+        "options": [
+          "Nederlands",
+          "Sporten"
+        ],
+        "answer": "Nederlands"
+      },
+      {
+        "question": "Hoe oud is Mark?",
+        "options": [
+          "24 jaar",
+          "21 jaar",
+          "3 jaar"
+        ],
+        "answer": "24 jaar"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "Ik",
+        "translation": "I",
+        "note": "subject pronoun"
+      },
+      {
+        "word": "ben",
+        "translation": "am",
+        "note": "from verb <i>zijn</i> (to be)"
+      },
+      {
+        "word": "Mark",
+        "translation": "Mark",
+        "note": "A name"
+      },
+      {
+        "word": "jaar",
+        "translation": "year",
+        "note": "singular (plural is <i>jaren</i>)"
+      },
+      {
+        "word": "oud",
+        "translation": "old",
+        "note": "age-related adjective"
+      },
+      {
+        "word": "leer",
+        "translation": "learn",
+        "note": "from verb <i>leren</i> (to learn)"
+      },
+      {
+        "word": "Nederlands",
+        "translation": "Dutch (language)",
+        "note": ""
+      },
+      {
+        "word": "woon",
+        "translation": "live",
+        "note": "from verb <i>Wonen</i> (to live)"
+      },
+      {
+        "word": "houd van",
+        "translation": "like (to love)",
+        "note": "Fixed expression with hobbies"
+      },
+      {
+        "word": "sporten",
+        "translation": "sport(s)",
+        "note": "from verb(<i>sporten</i>(to sport)) or noun (sports)"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "🌊 Naar het Zwembad",
+    "title-en": "To the swimming pool",
+    "level": "A2",
+    "description": "A kort verhaal over het zwembad",
+    "description-en": "A short story about the swimming pool.",
+    "content": "Willem gaat naar het zwembad. </br>Hij is blij, want hij vindt zwemmen leuk. </br>In zijn vrije tijd gaat hij vaak naar het zwembad. </br>Hij gaat met zijn fiets naar het zwembad. </br>Hij doet zijn zwemkleding aan. </br>Hij rent naar het zwembad en springt! <br>&ldquo;Het water is koud!&rdquo; roept Willem. </br>Hij gaat snel het zwembad uit. </br>Willem pakt een handdoek en maakt zich snel droog. </br>Hij gaat op een bankje in de zon zitten. </br>&ldquo;Dat is veel fijner!&rdquo; zegt Willem.",
+    "questions": [
+      {
+        "question": "Hoe gaat Willem naar het zwembad?",
+        "options": [
+          "Hij zwemt naar het zwembad.",
+          "Hij fietst naar het zwembad.",
+          "Hij loopt naar het zwembad."
+        ],
+        "answer": "Hij fietst naar het zwembad."
+      },
+      {
+        "question": "Wat vind Willem van het zwembad?",
+        "options": [
+          "Hij vind het zwembad groot.",
+          "Hij vind het zwembad fijn.",
+          "Hij vind het water in het zwembad koud."
+        ],
+        "answer": "Hij vind het water in het zwembad koud."
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "Willem",
+        "translation": "Willem",
+        "note": "A name"
+      },
+      {
+        "word": "zwembad",
+        "translation": "swimming pool",
+        "note": ""
+      },
+      {
+        "word": "zwemkleding",
+        "translation": "swimming clothes",
+        "note": ""
+      },
+      {
+        "word": "springt",
+        "translation": "jumps",
+        "note": "<p>from verb <i>springen</i> (to jump)<p>"
+      },
+      {
+        "word": "handdoek",
+        "translation": "towel",
+        "note": ""
+      },
+      {
+        "word": "droog",
+        "translation": "dry",
+        "note": ""
+      },
+      {
+        "word": "bankje",
+        "translation": "bench",
+        "note": ""
+      },
+      {
+        "word": "fijner",
+        "translation": "nicer, more pleasant",
+        "note": "<p>from <i>fijn</i></p>"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "🐯 Dieren in de Dierentuin",
+    "title-en": "Animals in the Zoo",
+    "level": "A1",
+    "description": "Een tekst over soorten dieren in de dierentuin.",
+    "description-en": "A text about species of animals in the zoo.",
+    "content": "Ik ga naar de dierentuin.</br> De dierentuin is in Amsterdam. </br>Ik ga met de auto. </br>Ik zie veel mooie dieren. </br>Een tijger ligt in de zon. </br>De tijger kijkt rond. </br> Ik zie een olifant. </br>De olifant is groot. </br>De olifant krijgt fruit. </br> De olifant is blij. </br>Ik koop een ijsje. </br>Ik zit op een bankje </br>Het is een leuke dag."
+  },
+  {
+    "id": 6,
+    "title": "📖 Naar School",
+    "title-en": "To School",
+    "level": "A1",
+    "description": "Een tekst over naar school gaan.",
+    "description-en": "A text about going to school.",
+    "content": "Ik ga naar school. </br>Ik leer Nederlands. </br>Hij gaat ook naar school. </br>Hij leert ook Nederlands. </br>Wij gaan allebei naar school. </br>Wij leren allebei Nederlands. </br>Ik vind school leuk. </br> Hij vindt school ook leuk. </br>Wij vinden allebei school leuk."
+  },
+  {
+    "title": "🛏️ &ldquo;Ik wil niet naar bed!&rdquo;"
+  },
+  {
+    "title": "🎂 Mijn Verjaardag"
+  },
+  {
+    "title": "👑 Koningsdag"
+  },
+  {
+    "title": "🧳 Een Reisje naar Friesland"
+  }
+]

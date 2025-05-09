@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tekst Bekijken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="back-btn" onclick="window.history.back()">⬅️ Terug (Back)</button>
+  <div class="text-main">
+    <div class="main-content">
+      <div id="text-wrapper">
+        <h1 id="text-title"></h1>
+        <h1 id="text-title-en"></h1>
+        <p class="level" id="text-level"></p>
+        <p class="level-en" id="text-level-en"></p>
+        <p class="description" id="text-description"></p>
+        <p class="description-en" id="text-description-en"></p>
+        <div id="text-content"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const textId = params.get("id");
+
+    fetch("texts.json")
+      .then(res => res.json())
+      .then(texts => {
+        const text = texts.find(t => t.id == textId);
+        if (text) {
+          document.getElementById("text-title").textContent = text.title;
+          document.getElementById("text-level").textContent = `Niveau: ${text.level}`;
+          document.getElementById("text-level-en").textContent = `Level: ${text.level}`;
+          document.getElementById("text-description").textContent = text.description;
+          document.getElementById("text-description-en").textContent = text["description-en"];
+          document.getElementById("text-content").innerHTML = `
+            <p><strong>Volledige tekst (Full text):</strong></p>
+            <div class="text-wrapper-box"><p>${text.content}</p></div>
+          `;
+        } else {
+          document.getElementById("text-title").textContent = "Tekst niet gevonden";
+          document.getElementById("text-content").textContent = "Deze tekst bestaat niet.";
+        }
+
+        if (text.questions && text.questions.length > 0) {
+          const quizContainer = document.createElement("div");
+          quizContainer.innerHTML = `<h3>📝 Begrijpend Lezen</h3><h4>📝 Comprehensive Reading</h4>`;
+          quizContainer.className = "quiz-container"
+
+          const form = document.createElement("form");
+          const userAnswers = [];
+
+          text.questions.forEach((q, i) => {
+            const qDiv = document.createElement("div");
+            qDiv.innerHTML = `
+      <p><strong>${i + 1}. ${q.question}</strong></p>
+      ${q.options.map(opt => `
+        <label>
+          <input type="radio" name="q${i}" value="${opt}" />
+          ${opt}
+        </label><br/>
+      `).join('')}
+      <p class="feedback" id="feedback-${i}" style="display: none;"></p>
+    `;
+            form.appendChild(qDiv);
+          });
+
+          const checkBtn = document.createElement("button");
+          checkBtn.textContent = "✅ Controleer antwoorden";
+          checkBtn.type = "button";
+          checkBtn.style.marginTop = "1rem";
+
+          checkBtn.addEventListener("click", () => {
+            let score = 0;
+            text.questions.forEach((q, i) => {
+              const selected = form.querySelector(`input[name="q${i}"]:checked`);
+              const feedback = form.querySelector(`#feedback-${i}`);
+              if (!selected) {
+                feedback.style.display = "block";
+                feedback.style.color = "orange";
+                feedback.textContent = "⚠️ Geen antwoord gekozen.";
+                return;
+              }
+
+              if (selected.value === q.answer) {
+                feedback.style.display = "block";
+                feedback.style.color = "green";
+                feedback.textContent = "✅ Goed!";
+                score++;
+              } else {
+                feedback.style.display = "block";
+                feedback.innerHTML = `<p style="color: red;">❌ Fout. Jouw antwoord: <strong>${selected.value}</strong></p><p style="color: green;">✅ Juiste antwoord: <strong>${q.answer}</strong></p>`;
+              }
+
+            });
+
+            alert(`Je hebt ${score} van de ${text.questions.length} vragen goed.`);
+          });
+
+          form.appendChild(checkBtn);
+          quizContainer.appendChild(form);
+          document.querySelector(".main-content").appendChild(quizContainer);
+        }
+
+        if (text.vocabulary && text.vocabulary.length > 0) {
+          const vocabContainer = document.createElement("div");
+          vocabContainer.innerHTML = `<h3>📃 Woordenlijst</h3><h4>📃 Word-list</h4>`;
+          vocabContainer.className = "vocab-container"
+
+          const titleWordDiv = document.createElement("div");
+          titleWordDiv.className = "vocab-entry"
+          titleWordDiv.innerHTML = `<div class="word-nl"><b>Nederlands (Dutch)</b></div>
+            <div class="word-en"><b>Engels (English)</b></div>
+            <div class="word-note"><b>Notities (Notes)</b></div>`;
+          vocabContainer.appendChild(titleWordDiv);
+
+          text.vocabulary.forEach((wordData, i) => {
+            const wordDiv = document.createElement("div");
+            wordDiv.className = "vocab-entry"
+            wordDiv.innerHTML = `<div class="word-nl">${wordData.word}</div>
+            <div class="word-en">${wordData.translation}</div>
+            <div class="word-note">${wordData.note}</div>`;
+            vocabContainer.appendChild(wordDiv);
+          });
+          document.querySelector(".main-content").appendChild(vocabContainer);
+        }
+      });
+  </script>
+</body>
+
+</html>
