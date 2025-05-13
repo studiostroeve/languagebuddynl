@@ -11,29 +11,29 @@
       {
         "question": "Waar zat de kat?",
         "options": [
-          "In een huis",
-          "In een boom",
-          "Op een stoel"
+          "in een huis",
+          "in een boom",
+          "op een stoel"
         ],
-        "answer": "In een boom"
+        "answer": "in een boom"
       },
       {
         "question": "Wie redde de kat?",
         "options": [
-          "De brandweer",
-          "De buren",
-          "Niemand"
+          "de brandweer",
+          "de buren",
+          "niemand"
         ],
-        "answer": "De brandweer"
+        "answer": "de brandweer"
       },
       {
         "question": "Hoe voelde de buurman zich?",
         "options": [
-          "Verdrietig",
-          "Blij",
-          "Boos"
+          "verdrietig",
+          "blij",
+          "boos"
         ],
-        "answer": "Blij"
+        "answer": "blij"
       }
     ],
     "vocabulary": [
@@ -110,38 +110,38 @@
       {
         "question": "Waar was de markt?",
         "options": [
-          "Thuis",
-          "In Amsterdam",
-          "In Rotterdam"
+          "thuis",
+          "in Amsterdam",
+          "in Rotterdam"
         ],
-        "answer": "In Amsterdam"
+        "answer": "in Amsterdam"
       },
       {
         "question": "Hoeveel mensen waren op het plein?",
         "options": [
-          "Tien",
-          "Honderd",
-          "Duizend of meer"
+          "tien",
+          "honderd",
+          "duizend of meer"
         ],
-        "answer": "Duizend of meer"
+        "answer": "duizend of meer"
       },
       {
         "question": "Wat kocht de verteller op de markt?",
         "options": [
-          "Kaas",
-          "Brood",
-          "Appels"
+          "kaas",
+          "brood",
+          "appels"
         ],
-        "answer": "Appels"
+        "answer": "appels"
       },
       {
         "question": "Hoe groot waren de appels?",
         "options": [
-          "Klein",
-          "Normaal",
-          "Groot"
+          "klein",
+          "normaal",
+          "groot"
         ],
-        "answer": "Groot"
+        "answer": "groot"
       }
     ],
     "vocabulary": [
@@ -159,6 +159,26 @@
         "word": "druk",
         "translation": "busy",
         "note": "Busy with people. Crowded."
+      },
+      {
+        "word": "appeltaart",
+        "translation": "applecake",
+        "note": ""
+      },
+      {
+        "word": "gigantische",
+        "translation": "gigantic, very large",
+        "note": "<p>from <i>gigantisch</i></p>"
+      },
+      {
+        "word": "producten",
+        "translation": "products",
+        "note": ""
+      },
+      {
+        "word": "bezoekers",
+        "translation": "visitors",
+        "note": ""
       }
     ]
   },
@@ -198,7 +218,7 @@
       {
         "word": "ben",
         "translation": "am",
-        "note": "from verb <i>zijn</i> (to be)"
+        "note": "<p>from verb <i>zijn</i> (to be)</p>"
       },
       {
         "word": "Mark",
@@ -208,7 +228,7 @@
       {
         "word": "jaar",
         "translation": "year",
-        "note": "singular (plural is <i>jaren</i>)"
+        "note": "<p>singular (plural is <i>jaren</i>)</p>"
       },
       {
         "word": "oud",
@@ -218,7 +238,7 @@
       {
         "word": "leer",
         "translation": "learn",
-        "note": "from verb <i>leren</i> (to learn)"
+        "note": "<p>from verb <i>leren</i> (to learn)</p>"
       },
       {
         "word": "Nederlands",
@@ -228,17 +248,17 @@
       {
         "word": "woon",
         "translation": "live",
-        "note": "from verb <i>Wonen</i> (to live)"
+        "note": "<p>from verb <i>wonen</i> (to live (in))</p>"
       },
       {
         "word": "houd van",
         "translation": "like (to love)",
-        "note": "Fixed expression with hobbies"
+        "note": "fixed expression with hobbies"
       },
       {
         "word": "sporten",
         "translation": "sport(s)",
-        "note": "from verb(<i>sporten</i>(to sport)) or noun (sports)"
+        "note": "<p>from verb <i>sporten (to sport)</i> or noun <i>sports</i></p>"
       }
     ]
   },
@@ -249,7 +269,7 @@
     "level": "A2",
     "description": "A kort verhaal over het zwembad",
     "description-en": "A short story about the swimming pool.",
-    "content": "Willem gaat naar het zwembad. </br>Hij is blij, want hij vindt zwemmen leuk. </br>In zijn vrije tijd gaat hij vaak naar het zwembad. </br>Hij gaat met zijn fiets naar het zwembad. </br>Hij doet zijn zwemkleding aan. </br>Hij rent naar het zwembad en springt! <br>&ldquo;Het water is koud!&rdquo; roept Willem. </br>Hij gaat snel het zwembad uit. </br>Willem pakt een handdoek en maakt zich snel droog. </br>Hij gaat op een bankje in de zon zitten. </br>&ldquo;Dat is veel fijner!&rdquo; zegt Willem.",
+    "content": "Willem gaat naar het zwembad. </br>Hij is blij, want hij vindt zwemmen leuk. </br>In zijn vrije tijd gaat hij vaak naar het zwembad. </br>Hij gaat met zijn fiets naar het zwembad. </br>Zijn zwemkleding doet hij aan. </br>Hij rent naar het zwembad en springt! <br>&ldquo;Het water is koud!&rdquo; roept Willem. </br>Hij gaat snel het zwembad uit. </br>Willem pakt een handdoek en maakt zich snel droog. </br>Hij gaat op een bankje in de zon zitten. </br>&ldquo;Dat is veel fijner!&rdquo; zegt Willem.",
     "questions": [
       {
         "question": "Hoe gaat Willem naar het zwembad?",
@@ -261,13 +281,13 @@
         "answer": "Hij fietst naar het zwembad."
       },
       {
-        "question": "Wat vind Willem van het zwembad?",
+        "question": "Wat vindt Willem van het zwembad?",
         "options": [
-          "Hij vind het zwembad groot.",
-          "Hij vind het zwembad fijn.",
-          "Hij vind het water in het zwembad koud."
+          "Hij vindt het zwembad groot.",
+          "Hij vindt het zwembad fijn.",
+          "Hij vindt het water in het zwembad koud."
         ],
-        "answer": "Hij vind het water in het zwembad koud."
+        "answer": "Hij vindt het water in het zwembad koud."
       }
     ],
     "vocabulary": [
@@ -320,16 +340,115 @@
     "level": "A1",
     "description": "Een tekst over soorten dieren in de dierentuin.",
     "description-en": "A text about species of animals in the zoo.",
-    "content": "Ik ga naar de dierentuin.</br> De dierentuin is in Amsterdam. </br>Ik ga met de auto. </br>Ik zie veel mooie dieren. </br>Een tijger ligt in de zon. </br>De tijger kijkt rond. </br> Ik zie een olifant. </br>De olifant is groot. </br>De olifant krijgt fruit. </br> De olifant is blij. </br>Ik koop een ijsje. </br>Ik zit op een bankje </br>Het is een leuke dag."
+    "content": "Ik ga naar de dierentuin.</br> De dierentuin is in Amsterdam. </br>Ik ga met de auto. </br>Ik zie veel mooie dieren. </br>Een tijger ligt in de zon. </br>De tijger kijkt rond. </br> Ik zie een olifant. </br>De olifant is groot. </br>De olifant krijgt fruit. </br> De olifant is blij. </br>Ik koop een ijsje. </br>Ik zit op een bankje. </br>Het is een leuke dag.",
+    "questions": [
+      {
+        "question": "Wat krijgt de olifant?",
+        "options": [
+          "een ijsje",
+          "fruit",
+          "een bankje"
+        ],
+        "answer": "fruit"
+      },
+      {
+        "question": "Waar ligt de tijger?",
+        "options": [
+          "op een bankje",
+          "in de auto",
+          "in de zon"
+        ],
+        "answer": "in de zon"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "dierentuin",
+        "translation": "zoo",
+        "note": ""
+      },
+      {
+        "word": "tijger",
+        "translation": "tiger",
+        "note": ""
+      },
+      {
+        "word": "olifant",
+        "translation": "elephant",
+        "note": ""
+      },
+      {
+        "word": "bankje",
+        "translation": "bench",
+        "note": ""
+      },
+      {
+        "word": "ijsje",
+        "translation": "icecream",
+        "note": ""
+      },
+      {
+        "word": "leuke",
+        "translation": "fun, exciting",
+        "note": "<p>adjective (from <i>leuk</i>)"
+      }
+    ]
   },
   {
     "id": 6,
     "title": "📖 Naar School",
     "title-en": "To School",
-    "level": "A1",
+    "level": "0",
     "description": "Een tekst over naar school gaan.",
     "description-en": "A text about going to school.",
-    "content": "Ik ga naar school. </br>Ik leer Nederlands. </br>Hij gaat ook naar school. </br>Hij leert ook Nederlands. </br>Wij gaan allebei naar school. </br>Wij leren allebei Nederlands. </br>Ik vind school leuk. </br> Hij vindt school ook leuk. </br>Wij vinden allebei school leuk."
+    "content": "Ik ga naar school. </br>Ik leer Nederlands. </br>Koen gaat ook naar school. </br>Hij leert ook Nederlands. </br>Wij gaan allebei naar school. </br>Wij leren allebei Nederlands. </br>Ik vind school leuk. </br> Koen vindt school ook leuk. </br>Wij vinden allebei school leuk.",
+    "questions": [
+      {
+        "question": "Wat vindt de verteller van school?",
+        "options": [
+          "leuk",
+          "saai",
+          "moeilijk"
+        ],
+        "answer": "leuk"
+      },
+      {
+        "question": "Wie gaat naar school?",
+        "options": [
+          "de verteller",
+          "koen",
+          "de verteller en koen"
+        ],
+        "answer": "de verteller en koen"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "Nederlands",
+        "translation": "Dutch (language)",
+        "note": ""
+      },
+      {
+        "word": "allebei",
+        "translation": "both",
+        "note": ""
+      },
+      {
+        "word": "leuk",
+        "translation": "fun, exciting",
+        "note": ""
+      },
+      {
+        "word": "leren",
+        "translation": "to learn",
+        "note": ""
+      },
+      {
+        "word": "vinden",
+        "translation": "to find, to think that",
+        "note": ""
+      }
+    ]
   },
   {
     "title": "🛏️ &ldquo;Ik wil niet naar bed!&rdquo;"

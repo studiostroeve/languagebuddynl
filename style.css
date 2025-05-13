@@ -46,7 +46,7 @@ nav {
   background-color: rgba(167, 115, 31, .5);
 }
 
-.links {
+#links {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -175,7 +175,8 @@ a.over {
 }
 
 p {
-  margin: .2rem;
+  margin-top: .2rem;
+   margin-bottom: .2rem;
 }
 
 h1 {
@@ -222,7 +223,7 @@ h6 {
 .tooltip .tooltiptext {
   visibility: hidden;
   max-width: 100%;
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0, 0, 0, .2);
   color: #ffffffdd;
   text-align: center;
   border-radius: 6px;
@@ -393,6 +394,10 @@ select {
   margin-bottom: 1.2rem;
 }
 
+.vocab-container {
+  margin-bottom: 16rem;
+}
+
 .vocab-entry {
   display: flex;
   flex-direction: row;
@@ -443,8 +448,7 @@ select {
 }
 
 
-
-/* EASTER EGG */
+/* NEDERLAND */
 
 #flag-overlay {
   position: fixed;
@@ -518,5 +522,43 @@ select {
   100% {
     opacity: 0;
     left: 100%
+  }
+}
+
+/* MOBILE */
+
+#menu-burger {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .index-main {
+    align-items: start;
+  }
+  .index-title-wrapper {
+    display: grid;
+    padding-top: 7rem;
+  }
+  .index-site-title {
+    font-size: 24pt;
+  }
+  .index-links {
+    max-width: 70vw;
+  }
+  #menu-burger {
+    display: grid;
+    position: absolute;
+    left: auto;
+    right: 1rem;
+    width: 32px; 
+    
+  }
+
+  #links {
+    display: none;
+  }
+  .link.active {
+    display: fixed;
+    top: 3rem;
   }
 }
