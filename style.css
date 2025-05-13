@@ -176,7 +176,7 @@ a.over {
 
 p {
   margin-top: .2rem;
-   margin-bottom: .2rem;
+  margin-bottom: .2rem;
 }
 
 h1 {
@@ -531,32 +531,73 @@ select {
   display: none;
 }
 
+#menu-burger img#close {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   .index-main {
     align-items: start;
   }
+
+  nav {
+    z-index: 200;
+  }
+
   .index-title-wrapper {
     display: grid;
     padding-top: 7rem;
   }
+
   .index-site-title {
     font-size: 24pt;
   }
+
   .index-links {
     max-width: 70vw;
   }
+
   #menu-burger {
     display: grid;
     position: absolute;
     left: auto;
     right: 1rem;
-    width: 32px; 
-    
+    width: 32px;
+    height: 32px;
+  }
+
+  #menu-burger img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
   }
 
   #links {
     display: none;
   }
+
+  #links.active {
+    display: grid;
+    position: absolute;
+    top: calc(37.05px + 2*31px);
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .12) 0 16px 8px 8px;
+  }
+
+  #menu-burger img#burger {
+    display: grid;
+  }
+
+  #menu-burger.active img#close {
+    display: grid;
+  }
+
   .link.active {
     display: fixed;
     top: 3rem;
