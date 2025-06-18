@@ -46,6 +46,10 @@ nav {
   background-color: rgba(167, 115, 31, .5);
 }
 
+.bottom-spacer {
+  padding-bottom: 1.25rem;
+}
+
 #links {
   position: absolute;
   display: flex;
